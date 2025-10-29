@@ -28,6 +28,7 @@ Replace [YOUR_TENANT_ID] & [YOUR_SUBSCRIPTION_ID] in the above with apporpriate 
 
 CD into the 'live' folder then use the following initialise, plan, apply or destroy:
 
+```
 terragrunt run --all init
 
 terragrunt run --all plan
@@ -35,12 +36,12 @@ terragrunt run --all plan
 terragrunt run --all apply
 
 terragrunt run --all destroy
+```
 
 There should be no errors.
 
-A provider.tf file will be auto-generated.
+A provider.tf file will be auto-generated. This shouldn't be pushed to the repo (it's excluded in .gitignore).
 
 # TESTING
 
 Using the Azure portal, check the Storage Accounts have been created.
-
