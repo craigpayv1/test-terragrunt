@@ -26,6 +26,22 @@ Replace [YOUR_TENANT_ID] & [YOUR_SUBSCRIPTION_ID] in the above with apporpriate 
 
 # TERRAGRUNT PLAN, APPLY & DESTROY
 
+Edit your Resource Group into each terragrunt.hcl for dev, tst, prd:
+
+```
+inputs = {
+  storage_account_name = "sa${local.random}prd12345"
+  resource_group_name  = "craig-pay-sandbox-rg"
+  location             = "uksouth"
+  environment          = "prd"
+
+  tags = {
+    owner  = "devops"
+    system = "demo"
+  }
+}
+```
+
 CD into the 'live' folder then use the following initialise, plan, apply or destroy:
 
 ```

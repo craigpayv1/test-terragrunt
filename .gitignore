@@ -1,5 +1,6 @@
-/login.ps1
-live/provider.tf
+login.ps1
+provider.tf
+random.txt
 
 *.tfstate
 *.tfstate.*
