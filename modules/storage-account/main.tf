@@ -22,4 +22,15 @@ resource "azurerm_storage_account" "this" {
     },
     var.tags
   )
+
+  lifecycle {
+    ignore_changes = [
+      tags["Atlas_Project"],
+      tags["Capability"],
+      tags["Deployment-date"],
+      tags["OwnerEmailAddress"],
+      tags["Project"],
+      tags["Team"]
+    ]
+  }
 }
