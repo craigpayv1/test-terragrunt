@@ -1,12 +1,14 @@
 # OVERVIEW
 
-This solution will deploy two Azure Storage Accounts using terragrunt.
+This solution will deploy three Azure Storage Accounts using terragrunt.
 
 # PRE-REQS
 
 An Azure Resource Group.
 
 Visual Studio Code, Terraform, Terragrunt, Azure CLI.
+
+Download the latets copy of terragrunt and copy it to your path (probably where you have your terraform.exe).
 
 Clone this repo, open in Visual Studio.
 
